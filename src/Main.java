@@ -37,8 +37,8 @@ public class Main {
                 Hey, look, it's some print statements.
                  */
                 System.out.println("Dromedary camels 🐪: " + dromedaryCamels);
-                System.out.print("Bactrian camels 🐫: " + bactrianCamels);
-                System.out.print("Total humps: " + humps);
+                System.out.println("Bactrian camels 🐫: " + bactrianCamels);
+                System.out.println("Total humps: " + humps);
 
                 // Check if there's a lot of humps.
                 if (humps >= TOO_MANY_HUMPS) {

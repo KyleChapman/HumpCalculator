@@ -1,6 +1,8 @@
-// Author: Kyle Chapman
-// Date:    May early something, 2026
-// Description: TODO write something good here
+// Author:  Kyle Chapman
+// Date:    May 6, 2026
+// Description: Based on a given number of camels of
+// different species, it calculates and evaluates the
+// overall number of humps.
 
 import java.util.Scanner;
 

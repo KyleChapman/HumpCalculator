@@ -18,26 +18,39 @@ public class Main {
         int dromedaryCamels;
         int bactrianCamels;
         int humps;
-        final int TOO_MANY_HUMPS = 5;
+        final int TOO_MANY_HUMPS = 10;
 
         // Input.
-        dromedaryCamels = input.nextInt();
-        bactrianCamels = input.nextInt();
+        System.out.print("Enter the number of dromedary camels: ");
+        if (input.hasNextInt()) {
+            dromedaryCamels = input.nextInt();
 
-        // Processing.
-        humps = dromedaryCamels + bactrianCamels * 2;
+            System.out.print("Enter the number of bactrian camels: ");
+            if (input.hasNextInt()) {
+                bactrianCamels = input.nextInt();
 
-        /* This is a block comment.
-        Something.
-        Hey, look, it's some print statements.
-         */
-        System.out.println("Dromedary camels 🐪: " + dromedaryCamels);
-        System.out.print("Bactrian camels 🐫: " + bactrianCamels);
-        System.out.print("Total humps: " + humps);
+                // Processing.
+                humps = dromedaryCamels + bactrianCamels * 2;
 
-        // Check if there's a lot of humps.
-        if (humps >= TOO_MANY_HUMPS) {
-            System.out.println("That's a lot of humps.");
+                /* This is a block comment.
+                Something.
+                Hey, look, it's some print statements.
+                 */
+                System.out.println("Dromedary camels 🐪: " + dromedaryCamels);
+                System.out.print("Bactrian camels 🐫: " + bactrianCamels);
+                System.out.print("Total humps: " + humps);
+
+                // Check if there's a lot of humps.
+                if (humps >= TOO_MANY_HUMPS) {
+                    System.out.println("That's a lot of humps.");
+                }
+            }
+            else {
+                System.out.println("Bactrian camels must be entered as an integer.");
+            }
+        }
+        else {
+            System.out.println("Dromedary camels must be entered as an integer.");
         }
     }
 }
